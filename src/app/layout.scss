@@ -8,6 +8,21 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+body::-webkit-scrollbar-track {
+    z-index: 30;
+    background-color: #00000000;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #00000000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(17, 24, 39, 0.9);
+    border: 1px solid #aaaaaa;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -21,7 +36,6 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
 }
