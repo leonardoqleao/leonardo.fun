@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rajdhani&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -31,7 +33,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-body {
+body {  
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -47,4 +49,10 @@ body {
 }
 h1 {
     color: black;
+}
+.font-dancing{
+    font-family: 'Dancing Script', cursive;
+}
+.font-rajdhani{
+    font-family: 'Rajdhani', sans-serif;
 }

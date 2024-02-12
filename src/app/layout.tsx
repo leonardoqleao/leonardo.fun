@@ -1,23 +1,29 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./layout.scss";
+import Header from "@/components/header/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Leonardo Q.",
-  description: "This is my Web Page!",
-  icons: {
-    icon: "/images/letter-l.png",
-  }
+    title: "Leonardo Q.",
+    description: "This is my Web Page!",
+    icons: {
+        icon: "/images/letter-l.png",
+    }
 };
 
 type rootInterface = { children: React.ReactNode };
 
 export default function RootLayout({ children }: rootInterface) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+    return (
+        <html className="scroll-smooth">
+            <body className={inter.className + " bg-slate-800"} >
+                <Header />
+                <main className='scroll-smooth bg-gray-100'>
+                    {children}
+                </main>
+            </body>
+        </html>
+    );
 }
