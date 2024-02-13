@@ -8,7 +8,7 @@ export default function Footer(): JSX.Element {
                     {navigation.map((item) => (
                         <a key={item.name} href={item.href} className="transition-all text-gray-400 hover:text-white hover:scale-110">
                             <span className="sr-only">{item.name}</span>
-                            <item.icon className="h-8 w-8" aria-hidden="true" />
+                            <item.icon className="h-6 lg:h-8 w-6 lg:w-8" aria-hidden="true" />
                         </a>
                     ))}
                 </div>
