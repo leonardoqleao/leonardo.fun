@@ -23,6 +23,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: rgba(17, 24, 39, 0.9);
     border: 1px solid #aaaaaa;
+    border-radius: 10px;
 }
 
 @media (prefers-color-scheme: dark) {

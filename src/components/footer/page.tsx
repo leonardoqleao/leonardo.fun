@@ -2,13 +2,13 @@
 export default function Footer(): JSX.Element {
     return (
         <footer>
-            <hr className="max-w-7xl mx-auto border-slate-600 h-1" />
+            <hr className="border-slate-600 h-1" />
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
                 <div className="flex justify-center space-x-6 md:order-2">
                     {navigation.map((item) => (
                         <a key={item.name} href={item.href} className="transition-all text-gray-400 hover:text-white hover:scale-110">
                             <span className="sr-only">{item.name}</span>
-                            <item.icon className="h-6 w-6" aria-hidden="true" />
+                            <item.icon className="h-8 w-8" aria-hidden="true" />
                         </a>
                     ))}
                 </div>
