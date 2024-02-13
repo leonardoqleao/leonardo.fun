@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./layout.scss";
 import Header from "@/components/header/page";
+import Footer from "@/components/footer/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     }
 };
 
-type rootInterface = { children: React.ReactNode };
+export type rootInterface = { children: React.ReactNode };
 
 export default function RootLayout({ children }: rootInterface) {
     return (
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: rootInterface) {
                 <main className='scroll-smooth bg-gray-100'>
                     {children}
                 </main>
+                <Footer/>
             </body>
         </html>
     );
