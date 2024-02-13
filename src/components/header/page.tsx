@@ -12,7 +12,7 @@ export default function Header(): JSX.Element {
                 <MobileMenu itens={itens} />
                 <div className="hidden lg:flex">
                     <div className="text-2xl text-slate-800 uppercase tracking-widest flex w-2/4 justify-evenly font-rajdhani">
-                        {itens.map((item: MenuItemType): JSX.Element => <MenuItem item={item} />)}
+                        {itens.map((item: MenuItemType): JSX.Element => <MenuItem key={item.label} item={item} />)}
                     </div>
                 </div>
             </nav>

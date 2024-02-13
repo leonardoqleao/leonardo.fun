@@ -44,7 +44,7 @@ export default function MobileMenu({ itens }: { itens: MenuItemType[] }): JSX.El
                             <div className="mt-6 flow-root">
                                 <div className="-my-6 divide-y divide-gray-500/10">
                                     <div className="text-2xl text-slate-700 space-y-2 py-10 flex flex-col items-center justify-center ">
-                                        {itens.map((item: MenuItemType): JSX.Element => <div className='py-5'><MenuItem item={item} /></div>)}
+                                        {itens.map((item: MenuItemType): JSX.Element => <div key={item.label} className='py-5'><MenuItem item={item} /></div>)}
                                     </div>
                                 </div>
                             </div>
