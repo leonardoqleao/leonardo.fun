@@ -1,5 +1,10 @@
 
+'use client'
+import { usePathname } from 'next/navigation';
+
 export default function Footer(): JSX.Element {
+    const path = usePathname()
+    if (path == '/') return <></>
     return (
         <footer>
             <hr className="border-slate-600 h-1" />

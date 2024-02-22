@@ -1,0 +1,12 @@
+.start-animated {
+    animation: name 500ms ;
+}
+
+@keyframes name {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:  100;
+    }
+}

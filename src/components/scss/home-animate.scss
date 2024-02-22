@@ -1,0 +1,10 @@
+.h-animate-0{ animation: h-animate 1s  200ms  linear forwards; opacity: 0; }
+.h-animate-1{ animation: h-animate 1s  300ms  linear forwards; opacity: 0; }
+.h-animate-2{ animation: h-animate 1s  400ms  linear forwards; opacity: 0; }
+.h-animate-3{ animation: h-animate 1s  500ms  linear forwards; opacity: 0; }
+.h-animate-4{ animation: h-animate 1s  600ms  linear forwards; opacity: 0; }
+.h-animate-5{ animation: h-animate 1s  700ms  linear forwards; opacity: 0; }
+@keyframes h-animate {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

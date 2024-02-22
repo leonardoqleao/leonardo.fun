@@ -4,10 +4,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rajdhani&display=swap');
 
+@font-face {
+    font-family: "Protest Revolution";
+    src: url('/font/ProtestRevolution-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Share Tech";
+    src: url('/font/ShareTech-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Satisfy";
+    src: url('/font/Satisfy-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Shadows Into Light";
+    src: url('/font/ShadowsIntoLight-Regular.ttf');
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 body::-webkit-scrollbar-track {
@@ -27,33 +47,50 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
-body {  
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-    )
-    rgb(var(--background-start-rgb));
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(to bottom,
+            transparent,
+        ) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
+
 h1 {
     color: black;
 }
-.font-dancing{
+
+.font-dancing {
     font-family: 'Dancing Script', cursive;
 }
-.font-rajdhani{
+
+.font-rajdhani {
     font-family: 'Rajdhani', sans-serif;
+}
+
+.font-protest-revolution {
+    font-family: "Protest Revolution", sans-serif;
+}
+
+.font-satisfy {
+    font-family: "Satisfy", cursive;
+}
+
+.font-shadows-into-light {
+    font-family: "Shadows Into Light", cursive;
+}
+
+.font-share-tech {
+    font-family: "Share Tech", sans-serif;
 }
