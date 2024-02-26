@@ -25,6 +25,6 @@ export default function Header(): JSX.Element {
 const itens: MenuItemType[] = [
     { href: '/', label: 'HOME' },
     { href: '/me', label: 'ME' },
-    { href: '/experience', label: 'EXPERIENCE' },
+    { href: '/articles', label: 'ARTICLES' },
     { href: '/contact', label: 'CONTACTS' }
 ]
